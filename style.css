@@ -53,6 +53,9 @@ ul {
   height: 26px;
   width: 169px;
 }
+.nav-toggle{
+  display: none;
+}
 
 .nav-list {
   display: flex;
@@ -458,6 +461,8 @@ ul {
 .about-mockup {
   margin-top: 30px;
   justify-items: center;
+  align-items: center;
+
 }
 
 .user-types {
@@ -976,6 +981,9 @@ ul {
   width: 150px;
   margin-bottom: 20px;
 }
+.footer-contact-details{
+  margin-top: 20px;
+}
 
 .brand-col p {
   font-size: 14px;
@@ -1080,24 +1088,6 @@ ul {
   white-space: nowrap;
 }
 
-@media (max-width: 900px) {
-  .hero-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-stats {
-    justify-content: center;
-  }
-
-  .mockup {
-    transform: none;
-  }
-
-  .badge-float {
-    display: none;
-  }
-}
 
 @media(max-width:768px) {
   .site-header {
