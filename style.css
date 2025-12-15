@@ -53,6 +53,9 @@ ul {
   height: 26px;
   width: 169px;
 }
+.nav-toggle{
+  display: none;
+}
 
 .nav-list {
   display: flex;
@@ -457,7 +460,9 @@ ul {
 
 .about-mockup {
   margin-top: 30px;
-  justify-items: center;
+  justify-items: flex-end;
+  align-items: center;
+
 }
 
 .user-types {
