@@ -4,128 +4,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Court Click — Login</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style2.0.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: #f9f9f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .login-container {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            width: 100%;
-            max-width: 400px;
-            text-align: center;
-        }
-
-        .login-logo {
-            width: 180px;
-            margin: 0 auto 30px;
-        }
-
-        .login-title {
-            font-size: 24px;
-            font-weight: 600;
-            color: #2c1531;
-            margin-bottom: 24px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 8px;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 12px 16px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        .form-control:focus {
-            border-color: #511131;
-            outline: none;
-        }
-
-        .btn-login {
-            width: 100%;
-            padding: 14px;
-            background: #511131;
-            color: white;
-            border: none;
-            border-radius: 30px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s;
-            margin-top: 10px;
-        }
-
-        .btn-login:hover {
-            opacity: 0.9;
-        }
-
-        .login-footer {
-            margin-top: 24px;
-            font-size: 14px;
-            color: #888;
-        }
-
-        .login-footer a {
-            color: #511131;
-            font-weight: 600;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;700;800&display=swap">
 </head>
 
 <body>
+    <section class="side-dashboard">
 
-    <div class="login-container">
-        <a href="index.html">
-            <img src="images/courtclicklogo.png" alt="Court Click" class="login-logo">
-        </a>
-        <h1 class="login-title">Welcome Back</h1>
+        <div class="main-dashboard">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <div class="sidebar-logo">
+                        <img src="images/logocc.png" alt="CC logo">
+                    </div>
+                    <div class="company-name">
+                        Court Click
+                    </div>
+                    <button class="sidebar-toggle">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
 
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
-            </div>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="Dashboard.html"><img src="images/dashboard icon.png" alt="">Dashboard <span
+                                    class="nav-icon"></span></a></li>
+                        <li><a href="cases.html"><img src="images/mycases.png" alt="">My Cases <span
+                                    class="badge">04</span></a></li>
+                        <li><a href="Ceritificate.html"><img src="images/certificate t.png" alt="">Certificate True
+                                Copy</a></li>
+                        <li><a href="esign.html"><img src="images/esign2.png" alt="">Esign</a></li>
+                        <li><a href="notarise.html"><img src="images/notarise2.png" alt="">Notarise</a></li>
+                        <li><a href="alert.html"><img src="images/alert2.png" alt="">Alert</a></li>
+                        <li><a href="timeline.html"><img src="images/timeline.png" alt="">Timeline</a></li>
+                        <li><a href="setting.html"><img src="images/settings.png" alt="">Settings</a></li>
+                        <li><a href="moreoption.html"><img src="images/more_option.png" alt="">More Option</a></li>
+                    </ul>
+                </nav>
 
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" class="form-control" placeholder="••••••••" required>
-            </div>
-
-            <button type="submit" class="btn-login">Log In</button>
-        </form>
-
-        <div class="login-footer">
-            <p>Don't have an account? <a href="#">Sign up</a></p>
-            <p style="margin-top: 8px;"><a href="index.html">← Back to Home</a></p>
+                <div class="nav-footer">
+                    <div class="footer-card">
+                        <img src="images/refer.png" alt="">
+                        <p class="refer-eyebrow">Refer & Earn</p>
+                        <p class="refer-sub">Bring your contacts to CourtClick. Earn up to ₹60,000!</p>
+                        <button type="button" class="btn-refer">Refer Now</button>
+                    </div>
+                    <button type="button" class="help-link">
+                        <img src="images/needhelp.png" alt="">
+                        <span>Need help? Contact Us</span>
+                    </button>
+                </div>
+            </aside>
         </div>
-    </div>
 
+        <main class="main">
+            <header class="main-header">
+                <div class="hello">
+                    <h1>Hello, <span>Ashok Raj</span></h1>
+                    <p>Manage and track your cases effortlessly here</p>
+                </div>
+                <div class="header-search">
+                    <div class="search-box">
+                        <input type="search" placeholder="Search by case number, petitioner name...">
+                        <button type="button" class="search-btn">
+                            <img src="images/search.png" alt="">
+                        </button>
+                    </div>
+                    <button class="notification-btn">
+                        <img src="images/bell.png" alt="">
+                    </button>
+                    <button type="button" class="profile-btn">
+                        <img src="images/profile.png" alt="">
+                    </button>
+                </div>
+            </header>
+
+            <section class="stats">
+                <article class="stats-card">
+                    <div class="stats-info">
+                        <p class="stats-sub">All Cases</p>
+                        <p class="stats-num">04</p>
+                    </div>
+                    <div class="stats-icon icon-purple">
+                        <img src="images/icon1.png" alt="">
+                    </div>
+                </article>
+                <article class="stats-card">
+                    <div class="stats-info">
+                        <p class="stats-sub">Pending</p>
+                        <p class="stats-num">02</p>
+                    </div>
+                    <div class="stats-icon icon-yellow">
+                        <img src="images/pending.png" alt="">
+                    </div>
+                </article>
+                <article class="stats-card">
+                    <div class="stats-info">
+                        <p class="stats-sub">Today Cases</p>
+                        <p class="stats-num">02</p>
+                    </div>
+                    <div class="stats-icon icon-blue">
+                        <img src="images/todaycase.png" alt="">
+                    </div>
+                </article>
+                <article class="stats-card">
+                    <div class="stats-info">
+                        <p class="stats-sub">Disposed</p>
+                        <p class="stats-num">02</p>
+                    </div>
+                    <div class="stats-icon icon-red">
+                        <img src="images/dashboardicon1.png" alt="">
+                    </div>
+                </article>
+            </section>
+
+            <section class="dashboard-grid">
+
+                <section class="panel">
+                    <div class="cases-wrapper">
+                        <header class="cases-header">
+                            <div class="cases-title">
+                                <h2>My cases</h2>
+                            </div>
+                            <div class="cases-header-action">
+                                <div class="cta-row">
+                                    <button type="button" class="btn-allcases">All Cases 04</button>
+                                    <button type="button" class="btn-addcase"><img src="images/addcases.png" alt=""> Add
+                                        Cases</button>
+                                    <button type="button" class="btn-viewall">View all</button>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="row">
+                            <button type="button" class="chip-filled">All Courts</button>
+                            <button type="button" class="chip">High Court of Kerala</button>
+                            <button type="button" class="chip">NCLAT Kochi</button>
+                            <button type="button" class="chip">District Court Trivandrum</button>
+                        </div>
+                    </div>
+
+
+                    <div class="cases-grid">
+
+                        <article class="case-card">
+                            <header class="case-card-header">
+                                <div class="case-court">
+                                    <div class="court-left">
+                                        <img src="images/highcourt.png" alt="">
+                                        <span>High Court of Kerala</span>
+                                    </div>
+                                    <button class="alert-btn">
+                                        <img src="images/alert2.png" alt="">
+                                        Alert
+                                    </button>
+                                </div>
+                            </header>
+
+                            <div class="case-body">
+                                <div class="case-judges">
+                                    <div class="avatars">
+                                        <img src="images/p1.png" alt="">
+                                        <img src="images/p2.png" alt="">
+                                        <img src="images/p3.png" alt="">
+                                    </div>
+                                    <button class="watch-btn">
+                                        <img src="images/video.png" alt="">
+                                        Watch Live Case
+                                    </button>
+                                </div>
+
+                                <p class="judges-name">
+                                    Mr. A. Muhammed Mustaque (ACJ), Mrs. Shoba Annamma Eapen (J) &
+                                    Mr. Aravindan K K (J)
+                                </p>
+
+                                <div class="case-title">
+                                    <strong>Robin D & Others (P3)</strong>
+                                    <span class="vs"><img src="images/vs.png" alt=""></span>
+                                    <strong>State of Kerala & Others</strong>
+                                </div>
+                            </div>
+
+                            <footer class="case-footer">
+                                <span class="tag">Court : 1A</span>
+                                <span class="tag">Your Item No : 13</span>
+                                <span class="tag active">Current Item No : 08</span>
+                            </footer>
+                        </article>
+
+                        <article class="case-card">
+                            <header class="case-card-header">
+                                <div class="case-court">
+                                    <div class="court-left">
+                                        <img src="images/highcourt.png" alt="">
+                                        <span>High Court of Kerala</span>
+                                    </div>
+                                    <button class="alert-btn">
+                                        <img src="images/alert2.png" alt="">
+                                        Alert
+                                    </button>
+                                </div>
+                            </header>
+
+                            <div class="case-body">
+                                <div class="case-judges">
+                                    <div class="avatars">
+                                        <img src="images/p1.png" alt="">
+                                        <img src="images/p2.png" alt="">
+                                        <img src="images/p3.png" alt="">
+                                    </div>
+                                    <button class="watch-btn">
+                                        <img src="images/video.png" alt="">
+                                        Watch Live Case
+                                    </button>
+                                </div>
+
+                                <p class="judges-name">
+                                    Mr. A. Muhammed Mustaque (ACJ), Mrs. Shoba Annamma Eapen (J) &
+                                    Mr. Aravindan K K (J)
+                                </p>
+
+                                <div class="case-title">
+                                    <strong>Robin D & Others (P3)</strong>
+                                    <span class="vs"><img src="images/vs.png" alt=""></span>
+                                    <strong>State of Kerala & Others</strong>
+                                </div>
+                            </div>
+
+                            <footer class="case-footer">
+                                <span class="tag">Court : 1A</span>
+                                <span class="tag">Your Item No : 13</span>
+                                <span class="tag active">Current Item No : 08</span>
+                            </footer>
+                        </article>
+
+                    </div>
+
+                </section>
+
+                <aside class="right-panel">
+                    <div class="action-card dark">
+                        <h3>Certified True Copy</h3>
+                        <p>Request a certified copy of the court judgment or order.</p>
+                        <button>Get Certified True Copy</button>
+                    </div>
+
+                    <div class="action-card purple">
+                        <h3>e-Sign</h3>
+                        <p>Digitally sign and send your vakalatnama.</p>
+                        <button>eSign Now</button>
+                    </div>
+
+                    <div class="action-card orange">
+                        <h3>Notarise Document</h3>
+                        <p>Virtual notarisation made simple, secure and legal.</p>
+                        <button>Notarise Your Document</button>
+                    </div>
+                </aside>
+
+            </section>
+
+            <footer class="main-section-footer">
+                <div class="trending-header-row">
+                    <h2>Explore What’s Trending in Courtrooms</h2>
+                    <a href="#" class="view-all">View all</a>
+                </div>
+                <div class="trending-grid">
+                    <article class="trending-card">
+                        <div class="trending-header">
+                            <div class="trending-court">
+                                <img src="images/highcourt.png" alt="">
+                                <span>Delhi High Court</span>
+                            </div>
+                            <button class="alert-btn">
+                                <img src="images/alert2.png" alt="">
+                                Alert
+                            </button>
+                        </div>
+                        <p class="trending-sub">LG and Samsung</p>
+                        <div class="trending-vs">
+                            <span class="vs-circle">VS</span>
+                        </div>
+                        <p class="trending-title">India's E-Waste Pricing Policy</p>
+                        <div class="trending-action">
+                            <button class="watch-btn"><img src="images/video.png" alt=""> Watch Live Case</button>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </article>
+                    <article class="trending-card">
+                        <div class="trending-header">
+                            <div class="trending-court">
+                                <img src="images/highcourt.png" alt="">
+                                <span>Delhi High Court</span>
+                            </div>
+                            <button class="alert-btn">
+                                <img src="images/alert2.png" alt="">
+                                Alert
+                            </button>
+                        </div>
+                        <p class="trending-sub">LG and Samsung</p>
+                        <div class="trending-vs">
+                            <span class="vs-circle">VS</span>
+                        </div>
+                        <p class="trending-title">India's E-Waste Pricing Policy</p>
+                        <div class="trending-action">
+                            <button class="watch-btn"><img src="images/video.png" alt=""> Watch Live Case</button>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </article>
+                    <article class="trending-card">
+                        <div class="trending-header">
+                            <div class="trending-court">
+                                <img src="images/highcourt.png" alt="">
+                                <span>Delhi High Court</span>
+                            </div>
+                            <button class="alert-btn">
+                                <img src="images/alert2.png" alt="">
+                                Alert
+                            </button>
+                        </div>
+                        <p class="trending-sub">LG and Samsung</p>
+                        <div class="trending-vs">
+                            <span class="vs-circle">VS</span>
+                        </div>
+                        <p class="trending-title">India's E-Waste Pricing Policy</p>
+                        <div class="trending-action">
+                            <button class="watch-btn"><img src="images/video.png" alt=""> Watch Live Case</button>
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </article>
+                </div>
+            </footer>
+
+        </main>
+    </section>
 </body>
 
 </html>
