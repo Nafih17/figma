@@ -342,6 +342,63 @@
 
         </main>
     </section>
+    <div id="alertModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <img src="images/bell.png" alt="" class="modal-icon">
+                <h2>Set an alert for this case</h2>
+            </div>
+            <p class="modal-subtitle">Never miss a hearing or update-stay in the loop.</p>
+
+            <div class="alert-options">
+                <label class="radio-container">
+                    <input type="radio" name="alert" value="disable">
+                    <span class="radio-checkmark"></span>
+                    Disable Alerts
+                </label>
+                <label class="radio-container">
+                    <input type="radio" name="alert" value="1">
+                    <span class="radio-checkmark"></span>
+                    Alert me 01 case before mine
+                </label>
+                <label class="radio-container">
+                    <input type="radio" name="alert" value="2">
+                    <span class="radio-checkmark"></span>
+                    Alert me 02 case before mine
+                </label>
+                <label class="radio-container">
+                    <input type="radio" name="alert" value="5">
+                    <span class="radio-checkmark"></span>
+                    Alert me 05 case before mine
+                </label>
+                <label class="radio-container">
+                    <input type="radio" name="alert" value="custom" checked>
+                    <span class="radio-checkmark"></span>
+                    Custom
+                </label>
+            </div>
+
+            <div class="custom-alert-row">
+                <div class="custom-check-stat">
+                    <span class="orange-check">&#10003;</span>
+                    <span>Alert set before <span class="highlight-orange">03</span> cases of mine</span>
+                </div>
+                <div class="counter-control">
+                    <button id="minusBtn" class="counter-btn">&minus;</button>
+                    <input type="text" id="counterValue" value="3" readonly>
+                    <button id="plusBtn" class="counter-btn">&plus;</button>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn-cancel" id="cancelBtn">Cancel</button>
+                <button class="btn-save" id="saveBtn">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
